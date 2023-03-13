@@ -58,8 +58,13 @@ make test
 
 ### Run server
 
+#### To Build docker Image & start docker compose.
 ```
 make docker_build
+```
+#### To start only the Fast API service using docker-compose
+```
+make docker_up
 ```
 
 ### Run test - ToDo
@@ -98,9 +103,9 @@ This will execute the following:
 * Verify the status of the "fastapi-service" deployment.
 * Print the endpoint of the FastAPI service endpoint. 
 
-3. Now, explore to the API!
+3. Now, explore to the API & verify the health check endpoint.
 
-Go to http://example.api/docs
+Go to http://example.api/health
 
 4. Once done, stop and delete Minikube!
 
