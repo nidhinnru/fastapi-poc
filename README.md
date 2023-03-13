@@ -118,8 +118,9 @@ minikube stop; minikube delete
 Get Kubernetes Deployments and Pods
 
 ```bash
-kubectl get deployments
-kubectl get pods
+kubectl get deployments -n fastapi
+kubectl get pods -n fastapi
+kubectl get svc -n fastapi
 ```
 ## Authentication via Auth0
 
