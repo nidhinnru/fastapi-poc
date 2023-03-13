@@ -9,10 +9,10 @@ Jumble API, Audit API Example
 
 * [Preconditions](#preconditions)
 * [Run Local Install](#run-local-install)
-* [Run With Docker](#Run With Docker)
-* [Run with Minicube](#Run with Minicube)
-* [Authentication using Auth0](#Authentication using Auth0)
-* [Access API Endpoint](#Access API Endpoint)
+* [Run With Docker](#run-with-docker)
+* [Run with Minicube](#run-with-minicube)
+* [Authentication using Auth0](#authentication-via-auth0)
+* [Access API Endpoint](#access-api-endpoint)
 * [Notes](#notes)
 
 ## Preconditions:
@@ -116,7 +116,7 @@ Get Kubernetes Deployments and Pods
 kubectl get deployments
 kubectl get pods
 ```
-## Authentication using Auth0
+## Authentication via Auth0
 
 ### RBAC Setup
 Setup is configured as per https://developer.auth0.com/resources/code-samples/api/fastapi/basic-role-based-access-control
