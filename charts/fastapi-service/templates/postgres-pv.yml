@@ -1,0 +1,28 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: postgres-pv
+  namespace: {{ .Release.Namespace }}
+  labels:
+    type: local
+    app: ecommerce
+    version: {{.Chart.AppVersion}}
+spec:
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: local-storage
+  capacity:
+    storage: 2Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  local:
+    path: /postgres-data #/run/desktop/mnt/host/e/postgres-data   # <-- if running with docker desktop in windows
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - minikube #docker-desktop    # <-- name of the node
+
