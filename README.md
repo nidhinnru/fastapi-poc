@@ -8,7 +8,7 @@ Jumble API, Audit API Example
 ## Table of Contents
 
 * [Preconditions](#preconditions)
-* [Run Local Install](#runlocalinstall)
+* [Run Local Install](#run-local-install)
 * [Run With Docker](#Run With Docker)
 * [Run with Minicube](#Run with Minicube)
 * [Authentication using Auth0](#Authentication using Auth0)
